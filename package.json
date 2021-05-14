@@ -1,0 +1,19 @@
+{
+  "name": "robocup-2021",
+  "version": "1.0.0",
+  "description": "Robocup 2021 - Fiapo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Djmax513/Robocup.git"
+  },
+  "author": "Gabriel Macedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Djmax513/Robocup/issues"
+  },
+  "homepage": "https://github.com/Djmax513/Robocup#readme"
+}
