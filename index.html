@@ -1,17 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <link rel="stylesheet" href="compile/style.css">
+    <!-- <link rel="stylesheet" href="compile/style.css"> -->
+    <link rel="stylesheet" href="style/style.css">
 
 
+    <link rel="icon" href="media/dogo.png">
     <title>Robocup 2021</title>
 </head>
 <body>
-    <p>Ola mundo</p>
+    <header class="header">
+
+            <div class="header__logo">
+
+                <img src="media/dogo-logo.png" alt="Logo">
+                <p>Fiapo</p>
+
+            </div>
+
+            <ul class="header__navbar">
+
+                <li class="header__navbar__item"><a href="#robo">robo</a></li>
+                <li class="header__navbar__item"><a href="#robocup">robocup</a></li>
+                <li class="header__navbar__item"><a href="#specs">specs</a></li>
+                <li class="header__navbar__item"><a href="#galery">galeria</a></li>
+                <li class="header__navbar__item"><a href="#team">team</a></li>
+                <li class="header__navbar__item"><a href="#equipe"></a></li>
+                <select class="header__navbar__item__select" name="lang" id="language">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                </select>
+            </ul>
+    </header>
+
+    <br>
+
+    <div data-scroll-container>
+
+
+
+    <h1 class="title"><em>Marquinhos</em> - Robocup 2021</h1>
+
+    <!-- imagem do robo -->
+
+    <div class="main container">
+        <h2 class="subtitle">Marquinhos MARK-1</h2>
+        <div id="bg-robot">
+            <img src="media/robo.png" alt="imagem do robô">
+        </div>
+    </div>
+
+    <br>
+
+    <!-- sobre o robo -->
+
+    <div class="robo container" id="robo">
+        <h2 class="subtitle">Sobre o <i>robô</i></h2>
+        
+        <p>O Marquinhos MARK-1 é um robô de batalha focado em aquecer resistências. Com seu design compacto suas laterais são armas que ao encostar no oponente, são liberadas para os lados, desencadeando um ataque rápido, onde não seria necessário encostar de uma forma meticulosa, mas através do mais breve contato, pois assim, com a alta temperatura, o balão do oponente será estourado instantaneamente.</p>
+    </div>
+
+
+
+    <br>
+
+    <!-- sobre o campeonato -->
+
+    <div class="robocup container d-flex_center" id="robocup">
+        <div class="robocup__img">
+            <img src="media/robocup.png" alt="Logo do Robocup - FIAP">
+        </div>
+        <div class="robocup__text">
+            <h2 class="subtitle">O que é o <i>Robocup</i>?</h2>
+            <p>O projeto Robocup consiste em uma competição entre robôs construídos por alunos do curso de Sistemas da Informação da FIAP. Durante o ano letivo, os alunos desenvolvem os robôs obedecendo algumas regras e normas impostas pela competição. O objetivo principal é estourar a bexiga do seu adversário enquanto mantém a sua intacta.</p>
+        </div>
+    </div>
+
+    <div class="specs container" id="specs">
+        <h2 class="subtitle"><i>Especificações</i> Técnicas</h2>
+
+        <div class="specs__grid">
+
+            <div class="row">
+
+                <div class="specs__item">
+                    <img src="media/components/item1.jpeg" alt="nome_do_componente">
+                    <h3 class="specs__item__title">Chave de fim de curso</h3>
+                </div>
+
+                <div class="specs__item">
+                    <img src="media/components/item2.jpeg" alt="nome_do_componente">
+                    <h3 class="specs__item__title">Motor com caixa de redução 300rpm</h3>
+                </div>
+
+                <div class="specs__item">
+                    <img src="media/components/item3.jpeg" alt="nome_do_componente">
+                    <h3 class="specs__item__title">Fio de Aço Inox</h3>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="specs__item">
+                    <img src="media/components/item4.jpeg" alt="nome_do_componente">
+                    <h3 class="specs__item__title">Estrutura de fibra de carbono</h3>
+                </div>
+
+                <div class="specs__item">
+                    <img src="media/components/item5.jpeg" alt="nome_do_componente">
+                    <h3 class="specs__item__title">Motor Shield</h3>
+                </div>
+
+                <div class="specs__item">
+                    <img src="media/components/item6.jpeg" alt="nome_do_componente">
+                    <h3 class="specs__item__title">Arduino Uno R3</h3>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="galery container" id="galery">
+
+        <h2 class="subtitle">Galeria de <i>fotos</i></h2>
+
+        <div class="galery__grid">
+                <div class="row">
+                    <img class="galery__img" src="media/galery/img1.png" alt="imagem 1">
+                    <img class="galery__img" src="media/galery/img1.png" alt="imagem 2">
+                    <img class="galery__img" src="media/galery/img1.png" alt="imagem 3">
+                </div>
+                
+                <div class="row">
+                    <img class="galery__img" src="media/galery/img1.png" alt="imagem 4">
+                    <img class="galery__img" src="media/galery/img1.png" alt="imagem 5">
+                    <img class="galery__img" src="media/galery/img1.png" alt="imagem 6">
+                </div>
+                
+                <div class="row">
+                    <img class="galery__img" src="media/galery/img1.png" alt="imagem 7">
+                    <img class="galery__img" src="media/galery/img1.png" alt="imagem 8">
+                    <img class="galery__img" src="media/galery/img1.png" alt="imagem 9">
+                </div>
+        </div>
+            
+    </div>
+
+    
+    <div class="team container" id="team">
+        <h2 class="subtitle">Equipe</h2>
+        <div class="row">
+            <div class="profile">
+                <img class="team__profile__photo" src="media/profile/andre.png" alt="Foto de André">
+                <p class="team__profile__name">André Campos Codo</p>
+            </div>
+            <div class="profile">
+                <img class="team__profile__photo" src="media/profile/eric.png" alt="Foto de Eric">
+                <p class="team__profile__name">Eric Martins Policelli</p>
+            </div>
+            <div class="profile">
+                <img class="team__profile__photo" src="media/profile/monteiro.png" alt="Foto de Gabriel Monteiro">
+                <p class="team__profile__name">Gabiel José S. R. Monteiro</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="profile">
+                <img class="team__profile__photo" src="media/profile/macedo.png" alt="Foto de Gabriel Macedo">
+                <p class="team__profile__name">Gabriel Macedo Serafim</p>
+            </div>
+            <div class="profile">
+                <img class="team__profile__photo" src="media/profile/nathalia.png" alt="Foto de Nathalia">
+                <p class="team__profile__name">Nathalia R. S. Defavari</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <p>Copyright &copy; 2021 - FIAPO</p>
+
+        <img src="media/logo.png" alt="">
+            
+        <div class="footer__social-media">
+
+            <a class="footer__social-media__icon" href="https://www.facebook.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592	c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20	c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"/></svg>
+            </a>
+
+            <a class="footer__social-media__icon" href="https://www.instagram.com/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624	C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003	c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"/><circle cx="16.806" cy="7.207" r="1.078"/><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42	c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111	c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71	c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45	c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633	c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311	c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311	c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654	c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712	c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055	c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669	c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"/></svg>
+            </a>
+
+            <a class="footer__social-media__icon" href="https://www.youtube.com/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.593,7.203c-0.23-0.858-0.905-1.535-1.762-1.766C18.265,5.007,12,5,12,5S5.736,4.993,4.169,5.404	c-0.84,0.229-1.534,0.921-1.766,1.778c-0.413,1.566-0.417,4.814-0.417,4.814s-0.004,3.264,0.406,4.814	c0.23,0.857,0.905,1.534,1.763,1.765c1.582,0.43,7.83,0.437,7.83,0.437s6.265,0.007,7.831-0.403c0.856-0.23,1.534-0.906,1.767-1.763	C21.997,15.281,22,12.034,22,12.034S22.02,8.769,21.593,7.203z M9.996,15.005l0.005-6l5.207,3.005L9.996,15.005z"/></svg>
+            </a>
+
+            <a class="footer__social-media__icon" href="https://www.pinterest.com/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M-111.052-244.992c-5.518,0-9.99,4.473-9.99,9.99c0,4.232,2.633,7.85,6.35,9.306 c-0.088-0.79-0.166-2.006,0.034-2.868c0.182-0.78,1.172-4.966,1.172-4.966s-0.299-0.599-0.299-1.484 c0-1.388,0.805-2.425,1.808-2.425c0.853,0,1.264,0.64,1.264,1.407c0,0.858-0.546,2.139-0.827,3.327 c-0.235,0.994,0.499,1.805,1.479,1.805c1.775,0,3.141-1.872,3.141-4.575c0-2.392-1.719-4.064-4.173-4.064 c-2.843,0-4.512,2.132-4.512,4.335c0,0.858,0.331,1.779,0.744,2.28c0.081,0.099,0.093,0.185,0.069,0.286 c-0.076,0.315-0.245,0.994-0.277,1.133c-0.044,0.183-0.145,0.222-0.335,0.134c-1.247-0.581-2.027-2.405-2.027-3.871 c0-3.151,2.289-6.045,6.601-6.045c3.466,0,6.159,2.469,6.159,5.77c0,3.444-2.171,6.213-5.184,6.213 c-1.013,0-1.964-0.525-2.29-1.146c0,0-0.501,1.907-0.623,2.374c-0.225,0.868-0.834,1.956-1.241,2.62 c0.935,0.289,1.928,0.445,2.958,0.445c5.517,0,9.99-4.473,9.99-9.99S-105.535-244.992-111.052-244.992" transform="translate(123.042 246.992)"/></svg>
+            </a>
+
+        </div>
+
+    </footer>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

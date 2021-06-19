@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/*  Quando escrevi isso, só eu e Deus sabiamos o que significava,
+    agora só Deus sabe :|
+*/
+
+
+/* Variables and Mixins */
+:root{
+    --color-primary: #4C52E3;
+    --color-secondary: rgb(218, 87, 87);
+    --color-accent: #EB185C;
+    --color-light: #fff;
+    --color-dark: #1e1d20;
+    --text-title: 300 1.7em 'poppins';
+    --text-subtitle: 300 1.4em 'poppins';
+    --text-normal: 300 1em 'poppins';
+}
+
+.title{
+    font: var(--text-title);
+}
+.subtitle{
+    font: var(--text-subtitle);
+    margin: 10px 0;
+}
+em, i{
+    color: var(--color-primary);
+    font-style: normal;
+}
+.d-flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: 50px 10vw;
+}
+
+/* Variables and Mixins */
+
+
+
+/* Global Preset */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+    background-color: var(--color-dark);
+    font: var(--text-normal);
+    text-align: center;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #666666;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    background: #787878;
+   }
+   ::-webkit-scrollbar-track{
+    background: var(--color-dark);
+    border-radius: 10px;
+   }
+
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 40px;
+    margin-bottom: 20px;
+    height: 80px;
+    width: 100vw;
+    -webkit-box-shadow: 0px -15px 60px 0px rgba(0,0,0,0.6); 
+    box-shadow: 0px -15px 60px 0px rgba(0,0,0,0.6);
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header__logo img{
+    height: 100%;
+    width: auto;
+}
+.header__logo p{
+    font: var(--text-title);
+}
+.header__navbar{
+    display: flex;
+}
+.header__navbar__item{
+    margin: 0px 10px;
+    transition: .7s;
+    cursor: pointer;
+}
+.header__navbar__item a{
+    color: white;
+    transition: .5s;
+}
+.header__navbar__item a:hover{
+    color: var(--color-primary);
+    filter: opacity(-100%);
+}
+.header__navbar__item__select{
+    background-color: transparent;
+    border-radius: 24px;
+    color: white;
+    border: solid 2px white;
+    padding: 5px;
+}
+.header__navbar__item__select:hover{
+    color: black;
+    border: solid 2px white;
+    background-color: white;
+    transition: .7s;
+    cursor: pointer;
+}
+
+
+
+/* main */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .subtitle{
+    margin-right: 40px;
+}
+#bg-robot{
+    background-color: #29282c;
+    height: 18em;
+    width: 18em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.main img{
+    height: 15em;
+    margin-right: -8vw;
+    margin-bottom: -2vw;
+}
+
+
+
+/* robo */
+.robo p{
+    text-align: center;
+    text-indent: 3em;
+}
+.robocup__img{
+    margin-right: 20px;
+}
+
+
+
+/* specs */
+.specs__grid .row{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0px;
+}
+.specs__item{
+    height: 12em;
+    width: 18em;
+}
+.specs__item img{
+    width: 8em;
+    height: 8em;
+    border-radius: 100%;
+    object-fit:contain;
+    background-color: white;
+}
+.specs__item__title{
+    font: var(--text-normal);
+}
+
+
+
+/* galery */
+.galery{
+    margin: 50px;
+}
+.galery__img{
+    margin: 5px;
+    width: 20em;
+    height: 12em;
+    background-image: none;
+    background-color: #29282c;
+}
+
+
+
+/* team */
+
+.team .row{
+    display: flex;
+    justify-content: center;
+}
+.profile{
+    margin:30px;
+}
+
+
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.footer__social-media__icon{
+    fill: white;
+    margin: 0 10px;
+}
+
+
+/* media query */
+@media only screen and (max-width: 880px){
+    .title{
+        font: normal 5vw 'poppins';
+    }
+    .header__navbar{
+        display: none;
+    }
+    .main{
+        display: block;
+    }
+    .main img{
+        width: 25vw;
+        height: auto;
+    }
+}
